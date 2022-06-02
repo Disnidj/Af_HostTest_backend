@@ -59,7 +59,7 @@ app.use(PresentationPanelsRoutes);
 app.use(userRoutes);
 
 //port
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const DB_URL='mongodb+srv://twg:twg123@twg.ibf9s.mongodb.net/Project0?retryWrites=true&w=majority'
 //connect db
 mongoose.connect(DB_URL)
